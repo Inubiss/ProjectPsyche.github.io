@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>O mnie</title>
+
+  <!-- CSS i ikony z Twojej strony głównej -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <!-- HEADER taki sam jak na index.html -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>Twoja Strona</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="about.html" class="active">O mnie</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Sekcja treści podstrony -->
+    <section class="section">
+      <div class="container" data-aos="fade-up">
+        <h1>O mnie</h1>
+        <p>Tu możesz wpisać swoją treść — opis siebie, swoje doświadczenie, misję itp.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER taki sam jak na index.html -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <p>© 2025 Twoja Strona. Wszystkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+  <!-- JS skrypty takie same jak na index.html -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
