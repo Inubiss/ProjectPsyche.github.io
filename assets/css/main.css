@@ -1523,38 +1523,4 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
-.testimonial-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: flex-start;
-  min-height: 420px; /* możesz dopasować wysokość do swoich treści */
-  padding: 20px;
-  box-sizing: border-box;
-}
 
-.testimonial-img {
-  width: 128px;
-  height: 128px;
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.testimonial-item h3 {
-  margin: 10px 0 5px;
-}
-
-.testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonial-item p {
-  flex-grow: 1; /* sprawia, że tekst rozciąga się w dostępnej przestrzeni */
-}
