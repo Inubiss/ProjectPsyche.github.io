@@ -24,61 +24,6 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
- 
-   <!-- Inne metatagi, linki do CSS itp. -->
-
-  <style>
-    .swiper.init-swiper {
-      width: 100%;
-      max-width: 800px;
-      margin: auto;
-      padding-bottom: 40px; /* miejsce na kropki */
-    }
-
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 20px;
-      box-sizing: border-box;
-    }
-
-    .testimonial-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      gap: 10px;
-    }
-
-    .testimonial-img {
-      width: 128px;
-      height: 128px;
-      object-fit: cover;
-      margin-bottom: 10px;
-      border-radius: 50%; /* okrągłe zdjęcia */
-    }
-
-    .testimonial-item h3 {
-      margin: 0;
-      font-size: 1.2rem;
-    }
-
-    .testimonial-item h4 {
-      margin: 0;
-      font-size: 1rem;
-      color: #aaa;
-    }
-
-    .testimonial-item .stars {
-      margin-bottom: 10px;
-    }
-
-    .testimonial-item p {
-      margin: 0;
-    }
-  </style>
-
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -345,53 +290,52 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper">
-         <script type="application/json" class="swiper-config">
-{
-  "loop": true,
-  "speed": 600,
-  "autoplay": {
-    "delay": 5000
-  },
-  "slidesPerView": "auto",
-  "autoHeight": true,        // <-- tutaj
-  "pagination": {
-    "el": ".swiper-pagination",
-    "type": "bullets",
-    "clickable": true
-  }
-}
-</script>
-         <div class="swiper-wrapper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
 
-  <div class="swiper-slide">
-    <div class="testimonial-item">
-      <img src="https://ui-avatars.com/api/?name=B&background=4CAF50&color=fff&size=128" class="testimonial-img" alt="Barbara">
-      <h3>Barbara</h3>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-      </div>
-      <p>
-        <i class="bi bi-quote quote-icon-left"></i>
-        <span>Pani Agata jest niezwykle empatyczna, uśmiechnięta, życzliwa, wykazuje olbrzymie zaangażowanie podczas kontaktu z pacjentem. W sposób niezwykle trafny postawiła diagnozę mojej córce. Kompetentna, z dużą wiedzą, umie słuchać. Można Pani Agacie zaufać. Potrafi udzielić pomocy psychologicznej. Jestem niezwykle zadowolona z pomocy, którą udzieliła mojej córce.</span>
-        <i class="bi bi-quote quote-icon-right"></i>
-      </p>
-    </div>
-  </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="https://ui-avatars.com/api/?name=B&background=4CAF50&color=fff&size=128" class="testimonial-img" alt="Barbara">
+                <h3>Barbara</h3>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Pani Agata jest niezwykle empatyczna, uśmiechnięta, życzliwa, wykazuje olbrzymie zaangażowanie podczas kontaktu z pacjentem. W sposób niezwykle trafny postawiła diagnozę mojej córce. Kompetentna, z dużą wiedzą, umie słuchać. Można Pani Agacie zaufać. Potrafi udzielić pomocy psychologicznej. Jestem niezwykle zadowolona z pomocy, którą udzieliła mojej córce.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
 
-  <div class="swiper-slide">
-    <div class="testimonial-item">
-      <!-- Brak zdjęcia -->
-      <h3>Adrian</h3>
-      <div class="stars">
-        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-      </div>
-      <p>
-        <i class="bi bi-quote quote-icon-left"></i>
-        <span>Pani Agata daje przede wszystkim bezpieczną przestrzeń. Można jej zaufać i nie naciska, kiedy potrzebuje się czasu. Wnioski z wizyt wyciąga się samodzielnie, co na dłuższą metę jest bardzo pomocne.</span>
-        <i class="bi bi-quote quote-icon-right"></i>
-      </p>
-    </div>
-  </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Adrian</h3>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Pani Agata daje przede wszystkim bezpieczną przestrzeń. Można jej zaufać i nie naciska, kiedy potrzebuje się czasu. Wnioski z wizyt wyciąga się samodzielnie, co na dłuższą metę jest bardzo pomocne.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
