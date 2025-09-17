@@ -41,14 +41,16 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
+      <!-- logo (bez zbędnego --> w komentarzu) -->
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/Agata-Celejewska-logo-horizontal-inverse-CMYK (1)_page-0001.jpg" alt="">
+        <!-- jeśli chcesz obrazkowe logo, użyj poniżej: -->
+        <img src="assets/img/Agata-Celejewska-logo-horizontal-inverse-CMYK (1)_page-0001.jpg" alt="Logo Agata Celejewska">
         <h1 class="sitename"></h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul style="display: flex; justify-content: center; gap: 25px; width: 100%;">
+      <!-- nav wyśrodkowane absolutnie względem kontenera -->
+      <nav id="navmenu" class="navmenu" style="position:absolute; left:50%; transform:translateX(-50%);">
+        <ul style="display:flex; gap:25px; margin:0; padding:0; list-style:none; align-items:center;">
           <li><a href="#hero" class="active">Start</a></li>
           <li><a href="#about">O mnie</a></li>
           <li><a href="About.html">Doświadczenie</a></li>
@@ -56,8 +58,12 @@
           <li><a href="#services">Umów wizytę</a></li>
           <li><a href="#contact">Kontakt</a></li>
         </ul>
+
+        <!-- hamburger (pokazywany na xs/md w zależności od klas d-*) -->
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+
+      <!-- (jeśli masz np. social links lub inne rzeczy po prawej, zostaw je tutaj) -->
 
     </div>
   </header>
