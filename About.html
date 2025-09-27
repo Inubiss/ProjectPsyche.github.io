@@ -31,6 +31,7 @@
 
 <body class="index-page">
 
+  <!-- Header -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
@@ -43,18 +44,33 @@
       <!-- nav -->
       <nav id="navmenu" class="navmenu" style="position:absolute; left:50%; transform:translateX(-50%);">
         <ul style="display:flex; gap:25px; margin:0; padding:0; list-style:none; align-items:center;">
-         <li><a href="index.html#hero" class="active">Start</a></li>
-<li><a href="index.html#about">O mnie</a></li>
-<li><a href="index.html#dla-kogo">Dla kogo</a></li>
-<li><a href="About.html">Doświadczenie</a></li> <!-- ten pozostaje, jeśli To jest osobna strona -->
-<li><a href="index.html#services">Umów wizytę</a></li>
-<li><a href="index.html#gallery">Gabinet</a></li>
-<li><a href="index.html#contact">Kontakt</a></li>
+          <li><a href="index.html#hero">Start</a></li>
+          <li><a href="index.html#about">O mnie</a></li>
+          <li><a href="index.html#dla-kogo">Dla kogo</a></li>
+          <li><a href="About.html">Doświadczenie</a></li>
+          <li><a href="index.html#services">Umów wizytę</a></li>
+          <li><a href="index.html#gallery">Gabinet</a></li>
+          <li><a href="index.html#contact">Kontakt</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
     </div>
+
+    <!-- Automatyczne podświetlanie aktywnego linku -->
+    <script>
+      const menuLinks = document.querySelectorAll('#navmenu a');
+      const currentUrl = window.location.href;
+
+      menuLinks.forEach(link => {
+        const linkHref = link.getAttribute('href');
+        if(currentUrl.includes(linkHref)) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    </script>
   </header>
 
   <main class="main">
@@ -151,48 +167,21 @@
       </div>
     </section>
 
-  </main>
+    <!-- Services Section -->
+    <section id="services" class="services section">
 
-  <footer id="footer" class="footer position-relative dark-background">
-    <div class="container">
-      <h3 class="sitename">Psycholog Agata Celejewska, Poznań<br></h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="description-title">My Services</span>
+        <h2>Umów Wizytę</h2>
+      </div><!-- End Section Title -->
+
       <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Laura</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <!-- Row z wycentrowanymi kartami -->
+        <div class="row gy-4 justify-content-center">
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+          <!-- Service Item 1 -->
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="bi bi-calendar4-week icon"></
